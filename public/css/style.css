@@ -1,0 +1,153 @@
+:root {
+    --green-windmill: #8db853;
+    --dark-blue: #002c14;
+    --light-grey: #e1e1e1;
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+}
+
+.nav-custom {
+    background-color: var(--dark-blue);
+    padding: 0 !important;
+}
+
+.nav-custom .container {
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar-nav {
+    margin-left: auto !important; 
+    margin-right: 0 !important;
+}
+
+.nav-custom .container {
+    padding-left: 0 !important; 
+}
+
+.navbar-collapse {
+    justify-content: flex-end !important; 
+}
+
+.nav-item {
+    display: flex; 
+}
+
+.nav-link {
+    color: var(--green-windmill) !important;
+    font-weight: 500;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0 25px !important;
+    height: 60px; 
+    transition: 0.3s;
+    border-radius: 0 !important; 
+}
+
+
+.nav-item.active .nav-link {
+    background-color: var(--green-windmill) !important;
+    color: white !important;
+    opacity: 1;
+}
+
+.nav-link i {
+    color: inherit; 
+    margin-right: 8px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.feature-item {
+    background: white; 
+    height: 100%; display: flex; 
+    flex-direction: column; 
+    }
+
+/* style.css */
+
+/* Khối tiêu đề chứa cả số và chữ */
+.num-head {
+    height: 180px;         /* Huy chỉnh độ cao cho giống ảnh */
+    position: relative;    /* Để làm mốc cho số và chữ nhảy bên trong */
+    padding: 20px;
+}
+
+/* Số 01, 02... nằm ở góc trên bên phải */
+.num-head .number {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.8;          /* Làm mờ số một chút nếu muốn giống mẫu */
+}
+
+/* Chữ Fugiat nằm ở góc dưới bên trái của khối màu */
+.num-head h4 {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Màu sắc cho từng khối */
+.head-dark { background-color: #001a2c; color: white; }
+.head-light { background-color: #e1e1e1; color: white; } /* Số màu trắng trên nền xám */
+
+.green-text { color: #8db853 !important; }
+
+/* Nút Learn More: Không bo góc và rộng 100% */
+.btn-green-windmill {
+    background-color: #8db853;
+    color: white !important;
+    border-radius: 0;
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    text-transform: none;
+    border: none;
+}
+
+.btn-green-windmill:hover {
+    background-color: #001a2c;
+}
+
+/* Căn chỉnh nội dung dưới khối màu */
+.content-body p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    min-height: 80px; /* Giúp các ô có chiều cao bằng nhau nếu chữ dài ngắn khác nhau */
+}
+
+.enjoy-banner {
+    background-image: url('../images/8.jpg');
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+
+.footer-dark { 
+    background-color: var(--dark-blue); 
+}
+
+.copyright-bar { 
+    background-color: var(--green-windmill);
+}
+
+@media (max-width: 991.98px) {
+    .num-head { 
+        justify-content: center; 
+        padding-right: 0; 
+    }
+    .navbar-nav .nav-link { 
+        text-align: center; 
+        border-bottom: 1px solid rgba(255,255,255,0.1); 
+    }
+}
